@@ -1,0 +1,22 @@
+<html>
+    <title>React</title> 
+<head>
+
+</head>
+<body>
+
+    <h1>Belajar React</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<div id="root"></div>
+<script>
+    const myElement = React.createElement('h1', {}, 'I do not use JSX!');
+    console.log(JSON.stringify(myElement));
+    console.log(myElement);
+    ReactDOM.createRoot(document.getElementById('root')).render(myElement);
+</script>
+
+</body>
+
+</html>
